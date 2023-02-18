@@ -73,10 +73,10 @@ export class CartComponent {
     }
 
     // Invoked when user clicks on 'Goto Products Page' in Thank you section
-    // Navigates to products page
+    
     gotoProducts() {
         sessionStorage.removeItem('grandTotal');
         sessionStorage.removeItem('selectedItems');
         this.router.navigate(['/products']);
     }
-}
+}//navigates to bundle project
