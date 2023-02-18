@@ -32,17 +32,18 @@ export class LoginComponent implements OnInit {
 
     // Invoked when user clicks submit in login form
     // Validates the credentials with the data fetched from the backend
+    
     onSubmit() {
         
-         //fetches the form object containing the values of all the form controls
-        this.login = this.loginForm.getRawValue();      
-        const user = this.users.filter(currUser => currUser.userName === this.login.userName && currUser.password === this.login.password)[0];
-        if (user) {
-             this.loginService.username = this.login.userName;      
-            this.router.navigate(['/products']);
-        } else {
-            this.valid = false;
-        }
-    }
+        //fetches the form object containing the values of all the form controls
+       this.login = this.loginForm.getRawValue();      
+       const user = this.users.filter(currUser => currUser.userName === this.login.userName && currUser.password === this.login.password)[0];
+       if (user) {
+            this.loginService.username = this.login.userName;      
+           this.router.navigate(['/products']);
+       } else {
+           this.valid = false;
+       }
+   }
 }
 //refer login component
