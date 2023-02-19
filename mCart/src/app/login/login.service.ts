@@ -21,7 +21,7 @@ export class LoginService {
             catchError(this.handleError));
     }
 
-    // Invoked if an error is thrown in the get request
+    //invoked if an error is thrown
     private handleError(err: HttpErrorResponse) {
         console.error(err);
         return throwError(()=>err.error() || 'Server error');
