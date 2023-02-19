@@ -10,8 +10,8 @@ import { Login } from './Login';
 })
 export class LoginService {
     username = '';
-    loginElement!: ElementRef;
-    welcomeElement!: ElementRef;
+    loginElement!:ElementRef;
+    welcomeElement!:ElementRef;
 
     constructor(private http: HttpClient) {}
 
