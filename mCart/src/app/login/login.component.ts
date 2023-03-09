@@ -47,3 +47,4 @@ export class LoginComponent implements OnInit {
    }
 }
 //refer login component
+// Validates the credentials with the data fetched from the backend
